@@ -1,0 +1,15 @@
+# Rust build artifacts
+/target/
+Cargo.lock
+**/*.rs.bk
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Benchmark results
+*.html
