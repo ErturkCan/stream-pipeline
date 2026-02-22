@@ -1,6 +1,6 @@
 # Stream Pipeline: A Backpressure-Aware Stream Processing Engine
 
-A production-ready, lock-free stream processing engine for real-time data pipelines with built-in backpressure support, designed for low-latency, high-throughput applications.
+A lock-free stream processing engine for real-time data pipelines with built-in backpressure support, designed for low-latency, high-throughput applications.
 
 ## Features
 
@@ -56,9 +56,9 @@ A production-ready, lock-free stream processing engine for real-time data pipeli
 
 ### 2. Watermark-Based Backpressure
 - **How it works**:
-  - When a stage's output buffer reaches 80% utilization, backpressure activates
-  - Upstream stages are signaled to slow down (spin-wait with exponential backoff)
-  - Released when buffer drops below 40% utilization (hysteresis prevents oscillation)
+ - When a stage's output buffer reaches 80% utilization, backpressure activates
+ - Upstream stages are signaled to slow down (spin-wait with exponential backoff)
+ - Released when buffer drops below 40% utilization (hysteresis prevents oscillation)
 - **Benefits**: Prevents cascading buffer overflows while minimizing false positives
 
 ### 3. Configurable Overflow Policies
@@ -317,12 +317,8 @@ stream-pipeline = "0.1"
 
 ## Contributing
 
-We welcome contributions! Areas for improvement:
-- Additional examples
-- Performance optimizations
-- Documentation enhancements
-- New stage types
-- Benchmarking improvements
+Contributions and feedback are welcome. Open an issue or submit a PR.
+
 
 ## License
 
@@ -335,9 +331,9 @@ If you use this in academic or professional work:
 ```bibtex
 @software{stream_pipeline_2024,
   title = {Stream Pipeline: A Backpressure-Aware Stream Processing Engine},
-  author = {Stream Pipeline Contributors},
+  author = {Can Erturk},
   year = {2024},
-  url = {https://github.com/example/stream-pipeline}
+  url = {https://github.com/ErturkCan/stream-pipeline}
 }
 ```
 
